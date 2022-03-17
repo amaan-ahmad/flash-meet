@@ -2,6 +2,7 @@ import "./styles/global.css";
 import React, { useContext } from "react";
 import Header from "./components/Header";
 import { UserContext } from "./context/user";
+import Meet from "./components/Meet";
 
 export default function App() {
   const { token, user, handleAuth } = useContext(UserContext);
@@ -16,6 +17,7 @@ export default function App() {
       ) : (
         "loading...."
       )}
+      {user ? <Meet /> : <></>}
     </>
   );
 }
