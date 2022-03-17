@@ -1,0 +1,23 @@
+{
+  "name": "react-minimal",
+  "version": "1.0.0",
+  "description": "minimal setup for react",
+  "main": "index.js",
+  "author": "amaan-ahmad",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+    "start": "parcel public/index.html --open --public-url ./",
+    "build": "parcel build public/index.html --public-url ."
+  }
+}
